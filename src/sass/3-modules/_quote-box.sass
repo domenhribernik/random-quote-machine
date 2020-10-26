@@ -1,0 +1,38 @@
+#quote-box
+  display: inline-block
+  padding: 40px
+  border: 3px solid black
+  border-radius: 10px
+  position: relative
+  left: 50%
+  transform: translateX(-50%)
+  margin-top: 10%
+  width: 35%
+  #new-quote
+    display: inline-block
+    position: relative
+    padding: 10px 40px
+    font-size: 1.6rem
+    background-color: black
+    background-size: 40px 40px
+    border: solid 1px #555
+    border-radius: 10px
+    color: white
+    transition: all 0.3s ease
+    float: right
+    margin-top: 35px
+    outline: none
+    transition: 0.3s ease
+    &::after 
+      position: absolute
+      top: 10px
+      right: 0.6em
+      content: "»"
+      transition: all ease 0.3s
+      opacity: 0
+    &:hover
+      padding: 10px 60px 10px 20px
+    &:hover::after 
+      opacity: 1
+      right: 1.2em
+    

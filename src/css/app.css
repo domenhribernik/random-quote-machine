@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* BASE STYLES */
+body {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.8rem; }
+
+a {
+  position: relative;
+  display: inline-block;
+  color: black;
+  font-size: 4rem;
+  justify-content: center; }
+  a:hover {
+    color: #323232;
+    transition: 0.3s ease-in-out; }
+
+i {
+  padding-right: 10px;
+  display: inline;
+  text-align: center¸;
+  vertical-align: bottom; }
+
+#text {
+  padding-bottom: 5px; }
+
+/* LAYOUTS */
+.buttonContainer {
+  vertical-align: middle; }
+
+/* MODULES */
+#quote-box {
+  display: inline-block;
+  padding: 40px;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10%;
+  width: 35%; }
+  #quote-box #new-quote {
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    background-color: black;
+    background-size: 40px 40px;
+    border: solid 1px #555;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+    float: right;
+    margin-top: 35px;
+    outline: none;
+    transition: 0.3s ease; }
+    #quote-box #new-quote::after {
+      position: absolute;
+      top: 10px;
+      right: 0.6em;
+      content: "»";
+      transition: all ease 0.3s;
+      opacity: 0; }
+    #quote-box #new-quote:hover {
+      padding: 10px 60px 10px 20px; }
+    #quote-box #new-quote:hover::after {
+      opacity: 1;
+      right: 1.2em; }
+
+/*# sourceMappingURL=app.css.map */
