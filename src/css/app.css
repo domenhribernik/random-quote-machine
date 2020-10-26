@@ -39,7 +39,7 @@ i {
   margin-top: 10%;
   width: 35%; }
   #quote-box #new-quote {
-    display: inline-block;
+    display: block;
     position: relative;
     padding: 10px 40px;
     font-size: 1.6rem;
