@@ -20,7 +20,6 @@ class App extends Component{
         .then(response => response.json())
         .then(data => {
             let r = Math.floor(Math.random() * data.length)
-            console.log(data[r])
             this.setState({
                 text: data[r].text,
                 author: data[r].author
@@ -31,10 +30,11 @@ class App extends Component{
   render() {
     return (
       <div id="quote-box">
+        <h1 id="title">Random quote machine</h1>
         <div id="text">{this.state.text}</div>
         <div id="author">{this.state.author == null ? "- Unknown" : "- " + this.state.author}</div>
-        <div class="buttonContainer">
-          <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_black"><i class="fa fa-twitter"></i></a>
+        <div className="buttonContainer">
+          <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_black"><i className="fa fa-twitter"></i></a>
           <button id="new-quote" onClick={this.newQuote}>New Quote</button>
         </div>
       </div>

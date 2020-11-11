@@ -31,6 +31,7 @@ i {
 #quote-box {
   display: inline-block;
   padding: 40px;
+  padding-top: 0px;
   border: 3px solid black;
   border-radius: 10px;
   position: relative;
@@ -38,6 +39,12 @@ i {
   transform: translateX(-50%);
   margin-top: 10%;
   width: 35%; }
+  #quote-box #title {
+    position: relative;
+    font-weight: bold;
+    line-height: 30px;
+    top: -34px;
+    left: -25px; }
   #quote-box #new-quote {
     display: block;
     position: relative;

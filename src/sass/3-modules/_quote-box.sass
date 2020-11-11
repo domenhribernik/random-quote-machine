@@ -1,6 +1,7 @@
 #quote-box
   display: inline-block
   padding: 40px
+  padding-top: 0px
   border: 3px solid black
   border-radius: 10px
   position: relative
@@ -8,6 +9,13 @@
   transform: translateX(-50%)
   margin-top: 10%
   width: 35%
+  #title
+    position: relative
+    font-weight: bold
+    line-height: 30px
+    top: -34px
+    left: -25px
+
   #new-quote
     display: block
     position: relative
@@ -35,4 +43,3 @@
     &:hover::after 
       opacity: 1
       right: 1.2em
-    
